@@ -1,21 +1,3 @@
-// --- CONFIGURAÇÃO E INICIALIZAÇÃO DO FIREBASE ---
-const firebaseConfig = {
-  apiKey: "AIzaSyAJvgKJMWp5tQFop9iHznTFcpdjZOpjYZo",
-  authDomain: "sistema-vendas-paulo.firebaseapp.com",
-  projectId: "sistema-vendas-paulo",
-  storageBucket: "sistema-vendas-paulo.firebasestorage.app",
-  messagingSenderId: "677167086514",
-  appId: "1:677167086514:web:3bd9d39cad2921983f42ab",
-  measurementId: "G-E33BRH8MC6"
-};
-
-// Inicializa Firebase, Auth & Firestore
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
-const auth = firebase.auth();
-const db = firebase.firestore();
-
 // --- ESTADO GLOBAL DA APLICAÇÃO ---
 let currentUser = null;
 let userProfile = null;
